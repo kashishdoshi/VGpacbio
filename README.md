@@ -46,8 +46,7 @@
 
 ## About the Project
 
-This is a template repository, which we recommend using when creating a new repository. This is a modified version of the
-[Best README Template](https://github.com/othneildrew/Best-README-Template).
+This repository contains the scripts used to analyse the long-read RNA sequencing generated using PacBio sequencing. 
 
 ### Built With
 
@@ -68,19 +67,16 @@ you should mention that here.
 
 ### Installation
 
-Describe how to install your package on various platforms.
+These scripts depends on [flair](https://flair.readthedocs.io/en/latest/) and assumes that it has been installed in the environment. 
 
-#### MacOS
-
-MacOS installation instructions.
+If you have flair installed within a conda environment, make sure to run the scripts from within the environment. 
 
 #### Linux
-
-Linux installation instructions.
-
-#### Windows
-
-Windows installation instructions.
+The recommended way to install flair is to use conda. Below is the script that can be used to install flair.
+`
+conda create -n flair -c conda-forge -c bioconda flair
+conda activate flair
+`
 
 ## Usage
 
