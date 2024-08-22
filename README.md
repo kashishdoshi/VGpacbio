@@ -75,6 +75,9 @@ If you have flair installed within a conda environment, make sure to run the scr
 The recommended way to install flair is to use conda. Below is the script that can be used to install flair.
 `
 conda create -n flair -c conda-forge -c bioconda flair
+`
+The environment can be activated using:
+`
 conda activate flair
 `
 
