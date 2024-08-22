@@ -53,10 +53,6 @@ This repository contains the scripts used to analyse the long-read RNA sequencin
 This section should list any major frameworks/libraries used to create your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Python][Python-shield]][Python-url]
-* [![R][R-shield]][R-url]
-* [![TypeScript][TypeScript-shield]][TypeScript-url]
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap-shield]][Bootstrap-url]
 
 ## Getting Started
 
@@ -73,10 +69,13 @@ If you have flair installed within a conda environment, make sure to run the scr
 
 #### Linux
 The recommended way to install flair is to use conda. Below is the script that can be used to install flair.
+
 `
 conda create -n flair -c conda-forge -c bioconda flair
 `
+
 The environment can be activated using:
+
 `
 conda activate flair
 `
