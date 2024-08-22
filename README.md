@@ -7,7 +7,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-# repository-template
+# VGpacbio Analysis
 
 [![Project Image][project-image]](https://bccrc.ca)
 
