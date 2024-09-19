@@ -82,7 +82,7 @@ conda activate flair
 
 ## Usage
 
-Describe how to use your package.
+Run the run_flair.sh pipeline for each sample in the analysis group. Then concatenate all the corrected.bed files into a single file (See the comments in Quantify.sh). Finally update the file paths in Quantify.sh and run the script to get raw counts for each sample.
 
 ## Examples
 
