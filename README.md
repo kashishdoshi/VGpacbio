@@ -84,43 +84,13 @@ conda activate flair
 
 Run the run_flair.sh pipeline for each sample in the analysis group. Then concatenate all the corrected.bed files into a single file (See the comments in Quantify.sh). Finally update the file paths in Quantify.sh and run the script to get raw counts for each sample.
 
-## Examples
-
-Give some examples on how to use your code. If you are analyzing data, some plots could be useful here.
-
-## Documentation
-
-If your package has a documentation site, link to it here.
-
-## Developers
-
-This section is for developers who would like to work on this package.
-
-### Contributing
-
-If you want to have other contributors on your project, in this section you can describe how they can do so.
-
-### Installation
-
-If the installation is different for developers (for example, developers using Python packages will want to install an
-editable version), include the details here.
-
-### Testing
-
-Describe how to run tests.
-
-## License
-
-License details.
-
 ## Contact
 
-Your Name - your_email@example.com
+Kashish - kdoshi@bccrc.ca
 
 ## Acknowledgments and Citations
 
 1. [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-2. Citation #2
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
