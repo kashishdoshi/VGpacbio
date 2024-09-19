@@ -1,8 +1,12 @@
 #!/bin/bash
 
+##### Usage ######################################
+# run_flair.sh sample_name_without_bam_extension
+##################################################
+
 # Define paths to your files and tools
 SAMPLE_NAME=$1
-BAM_FILE="/projects/weng_lab/scratch/kdoshi/VGpacbio/raw_data/$SAMPLE_NAME.HiFi_reads.bam"
+BAM_FILE="/projects/weng_lab/scratch/kdoshi/VGpacbio/raw_data/$SAMPLE_NAME.bam"
 GENOME="/projects/weng_lab/scratch/kdoshi/VGpacbio/refGenome/human_GRCh38_no_alt_analysis_set.fasta"
 GTF_FILE="/projects/weng_lab/scratch/kdoshi/VGpacbio/refGenome/gencode.v39.annotation.gtf"
 #FLAIR_DIR="path/to/flair"
@@ -46,11 +50,5 @@ flair collapse \
   --annotation_reliant generate \
   --threads $THREADS \
   --output $OUTPUT_DIR/$SAMPLE_NAME.collapsed
-# Step 4: (Optional) Use FLAIR to quantify isoforms if you have multiple samples
-#echo "Quantifying isoforms..."
-#flair quantify -r $OUTPUT_DIR/A1.fa -i $OUTPUT_DIR/collapsed.isoforms.bed --threads $THREADS -o $OUTPUT_DIR/quantified
-
-# Step 5: (Optional) FLAIR diffExp for differential expression analysis
-# python $FLAIR_DIR/flair.py diffExp -i $OUTPUT_DIR/quantified.isoforms.tpm.txt -o $OUTPUT_DIR/diffexp
 
 echo "FLAIR pipeline completed. Results are in $OUTPUT_DIR."
